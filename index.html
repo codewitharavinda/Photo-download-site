@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- <style>
+        .btn{
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .btn:hover{
+            background-color: rgb(40, 40, 143);
+        }
+        .btn:active{
+            background-color: rgb(143, 40, 40);
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <!-- Background video (uses poster/fallback image when video can't autoplay) -->
+    <video class="bg-video" autoplay muted loop playsinline poster="assets/bc.png">
+        <source src="assets/bc-v.mp4" type="video/mp4">
+        <!-- fallback message -->
+        Your browser does not support the video tag.
+    </video>
+
+
+    <!-- <input type="button" class="btn btn-outline-success" value="Submit"> -->
+
+
+    <!-- <div class="container text-center">
+        <div class="row">
+            <div class="col bg-danger">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus sit ipsa, tempore
+                    reiciendis exercitationem voluptate dolorem quas ipsam consectetur? Nostrum, numquam illum. Cumque
+                    quibusdam ut placeat consequatur veritatis quam.</p>
+            </div>
+            <div class="col bg-primary">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus sit ipsa, tempore
+                    reiciendis exercitationem
+                    voluptate dolorem quas ipsam consectetur? Nostrum, numquam illum. Cumque quibusdam ut placeat
+                    consequatur veritatis
+                    quam.</p>
+            </div>
+            <div class="col bg-secondary">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus sit ipsa, tempore
+                    reiciendis exercitationem
+                    voluptate dolorem quas ipsam consectetur? Nostrum, numquam illum. Cumque quibusdam ut placeat
+                    consequatur veritatis
+                    quam.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-success">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus sit ipsa, tempore
+                    reiciendis exercitationem voluptate dolorem quas ipsam consectetur? Nostrum, numquam illum. Cumque
+                    quibusdam ut placeat consequatur veritatis quam.</p>
+            </div>
+            <div class="col bg-warning text-white fw-bold m-4 p-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus sit ipsa, tempore
+                    reiciendis exercitationem
+                    voluptate dolorem quas ipsam consectetur? Nostrum, numquam illum. Cumque quibusdam ut placeat
+                    consequatur veritatis
+                    quam.</p>
+            </div>
+            <div class="col bg-danger-subtle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus sit ipsa, tempore
+                    reiciendis exercitationem
+                    voluptate dolorem quas ipsam consectetur? Nostrum, numquam illum. Cumque quibusdam ut placeat
+                    consequatur veritatis
+                    quam.</p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <style>
+        /* Body fallback background image (used when video is not available) */
+        body {
+            background-image: url('assets/bc.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        /* Fullscreen background video positioned behind page content */
+        .bg-video {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            object-fit: cover;
+            filter: brightness(0.55) saturate(0.9);
+            pointer-events: none; /* allow clicks through the video */
+        }
+
+        /* Hide video on small screens to save bandwidth and avoid autoplay issues */
+        @media (max-width: 767px) {
+            .bg-video { display: none; }
+        }
+
+        /* Ensure gallery sits above the video */
+        .gallery { margin-top: 1.5rem; position: relative; z-index: 2; }
+
+        /* Container overlay to improve readability on top of background/video */
+        .gallery-wrapper {
+            background: rgba(0,0,0,0.45); /* semi-transparent dark overlay */
+            padding: 1rem;
+            border-radius: 8px;
+            color: #fff;
+        }
+
+        /* Gallery styles: force same visible resolution using fixed height and object-fit */
+        .gallery-item { padding: 0.25rem; }
+        .gallery-item .thumb {
+            width: 100%;
+            height: 180px; /* visible height for all images */
+            display: block;
+            object-fit: cover; /* preserve aspect ratio, crop if needed */
+            border-radius: 6px;
+        }
+
+        @media (min-width: 992px) {
+            .gallery-item .thumb { height: 220px; }
+        }
+        @media (min-width: 1200px) {
+            .gallery-item .thumb { height: 260px; }
+        }
+    </style>
+
+    <div class="container gallery">
+        <div class="gallery-wrapper">
+            <h2 class="mb-3 text-center">Minecraft</h2>
+            <div class="row " >
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/1.png" alt="Photo 1" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/2.png" alt="Photo 2" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/3.png" alt="Photo 3" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/4.png" alt="Photo 4" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/5.png" alt="Photo 5" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/6.png" alt="Photo 6" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/7.jpg" alt="Photo 6" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/8.png" alt="Photo 6" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/9.png" alt="Photo 6" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/10.png" alt="Photo 6" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/11.png" alt="Photo 6" class="thumb">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                <img src="assets/12.png" alt="Photo 6" class="thumb">
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
