@@ -249,7 +249,8 @@
             </div>
         </div>
     </div>
-
+    
+    
 
 
     <style>
@@ -413,6 +414,55 @@
             saveUserVotes(userVotes);
             updateCountsInDOM(src, votes);
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-wrapper container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="mb-0">&copy; <span id="year"></span> CodeWithAravinda. All rights reserved.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <div class="social">
+                        <a class="social-btn" href="https://web.facebook.com/supun.aravinda.9256" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <!-- Facebook SVG -->
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 12C22 6.477 17.523 2 12 2S2 6.477 2 12c0 5 3.657 9.128 8.438 9.877v-6.987H7.898v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33V21.88C18.343 21.128 22 17 22 12z"/></svg>
+                        </a>
+                        <a class="social-btn" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <!-- Twitter SVG -->
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.924c-.63.28-1.306.47-2.016.555.726-.435 1.282-1.125 1.545-1.948-.68.402-1.433.695-2.233.852C18.78 4.53 17.84 4 16.78 4c-1.68 0-3.042 1.36-3.042 3.04 0 .238.027.47.078.692C9.728 7.61 6.1 5.77 3.67 2.88c-.262.45-.413.97-.413 1.525 0 1.052.536 1.98 1.35 2.525-.5-.016-.97-.155-1.38-.384v.04c0 1.468 1.042 2.694 2.427 2.973-.254.07-.522.108-.797.108-.195 0-.386-.02-.57-.056.386 1.206 1.503 2.084 2.83 2.106C7.1 14.3 5.8 14.9 4.36 14.9c-.34 0-.68-.02-1.01-.063C4.813 16.03 6.7 16.76 8.78 16.76c5.268 0 8.15-4.36 8.15-8.15v-.37c.56-.4 1.04-.9 1.42-1.47-.513.228-1.063.38-1.643.45z"/></svg>
+                        </a>
+                        <a class="social-btn" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <!-- Instagram SVG -->
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.428.403a4.92 4.92 0 011.77 1.153 4.92 4.92 0 011.153 1.77c.163.459.349 1.258.403 2.428.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.428a4.92 4.92 0 01-1.153 1.77 4.92 4.92 0 01-1.77 1.153c-.459.163-1.258.349-2.428.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.428-.403a4.92 4.92 0 01-1.77-1.153 4.92 4.92 0 01-1.153-1.77c-.163-.459-.349-1.258-.403-2.428C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.428a4.92 4.92 0 011.153-1.77 4.92 4.92 0 011.77-1.153c.459-.163 1.258-.349 2.428-.403C8.416 2.175 8.796 2.163 12 2.163zm0 1.838c-3.17 0-3.548.012-4.796.069-1.03.047-1.59.217-1.962.36a3.08 3.08 0 00-1.12.73 3.08 3.08 0 00-.73 1.12c-.143.373-.313.933-.36 1.962-.057 1.248-.069 1.626-.069 4.796s.012 3.548.069 4.796c.047 1.03.217 1.59.36 1.962.17.45.4.836.73 1.12.284.33.67.56 1.12.73.373.143.933.313 1.962.36 1.248.057 1.626.069 4.796.069s3.548-.012 4.796-.069c1.03-.047 1.59-.217 1.962-.36a3.08 3.08 0 001.12-.73 3.08 3.08 0 00.73-1.12c.143-.373.313-.933.36-1.962.057-1.248.069-1.626.069-4.796s-.012-3.548-.069-4.796c-.047-1.03-.217-1.59-.36-1.962a3.08 3.08 0 00-.73-1.12 3.08 3.08 0 00-1.12-.73c-.373-.143-.933-.313-1.962-.36-1.248-.057-1.626-.069-4.796-.069zM12 7.838a4.162 4.162 0 110 8.324 4.162 4.162 0 010-8.324zm0 1.838a2.324 2.324 0 100 4.648 2.324 2.324 0 000-4.648zm4.406-2.99a1.006 1.006 0 11-2.012 0 1.006 1.006 0 012.012 0z"/></svg>
+                        </a>
+                        <a class="social-btn" href="https://github.com/codewitharavinda" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <!-- GitHub SVG -->
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.72 1.27 3.38.97.11-.75.41-1.27.75-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.9-.39.99 0 1.98.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.44-2.71 5.4-5.29 5.68.42.36.79 1.08.79 2.18 0 1.57-.01 2.83-.01 3.21 0 .31.21.68.8.56C20.71 21.38 24 17.08 24 12c0-6.27-5.23-11.5-12-11.5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .site-footer { position: relative; z-index: 3; margin-top: 2rem; color: #fff; }
+        .footer-wrapper { background: rgba(0,0,0,0.55); padding: 12px 16px; border-radius: 8px; }
+        .site-footer p { margin: 0; }
+        .social { display: inline-flex; gap: 8px; align-items: center; }
+        .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.06); color: #fff; text-decoration: none; }
+        .social-btn:hover { background: rgba(255,255,255,0.14); transform: translateY(-2px); }
+        .social-btn svg { display: block; }
+    </style>
+
+    <script>
+        // fill current year in footer
+        (function(){
+            const el = document.getElementById('year');
+            if (el) el.textContent = new Date().getFullYear();
+        })();
     </script>
 
     <script src="app.js"></script>
